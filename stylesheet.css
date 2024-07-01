@@ -1,0 +1,298 @@
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto 0.25fr auto 2fr ;
+    grid-template-columns: auto;
+    max-width: 1400px;
+    width: 100%;
+    
+  
+    
+}
+
+
+header {
+    display: inline-flex;
+    width: 100%;
+    flex-shrink: 0;
+    margin-bottom: 3rem;
+}
+
+header ul {
+    margin-left: auto;
+}
+
+header ul li {
+    list-style:none;
+    color: gray;
+    display: inline-flex;
+    margin-left: 3.5rem;
+    
+}
+
+.dropdown{
+    display: none;
+}
+
+.dropbtn{
+    width: 50px; 
+    height: 50px; 
+    background-image: url('./assets/images/icon-menu.svg');     
+ 
+}
+
+.dropbtn,
+.closingbtn {
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-color: rgb(0, 0,0,0); 
+    border: none; 
+    cursor: pointer; 
+
+
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    margin-right: auto;
+    z-index: 1;
+    min-width: 50px;
+    right: 5%;
+}
+
+.closingbtn{
+    background-image: url("./assets/images/icon-menu-close.svg");
+    width: 20px;
+    height: 20px;
+
+
+}
+
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    font-size: 20px;
+}
+  
+  
+.dropdown-content a:hover {background-color: #ddd;}
+.closingbtn :hover{background-color: #ddd;}
+  
+ 
+.show {display:block;}
+.no-show{display: none;}
+
+.mid-section{
+    display: grid;
+    grid-template-columns:  2fr  1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    column-gap: 2rem;
+}
+
+.mobile-main-title{
+    display: none;
+}
+
+
+.left-mid picture img {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+
+.left-mid-bottom{
+    width: 100%;
+    margin-top: 0px;
+    display: flex;
+}
+
+.main-picture-mobile{
+    display: none;
+}
+
+
+.left-mid h1{
+    width: 50%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 4rem;
+}
+
+.left-mid-bottom-text{
+    width: 50%;
+    margin-top: 0px;
+}
+
+.left-mid-bottom-text p {
+    margin-top: 0px;
+    margin-bottom: 3rem;
+    color: grey;
+    font-size: 1.5rem;
+}
+
+.left-mid-bottom-text button{
+    font-size: larger;
+    background-color: hsl(5, 85%, 63%);
+    height: 4rem;
+    width: 50%;
+}
+
+
+.mid-section-right{
+    background-color: hsl(240, 100%, 5%);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-evenly;
+
+}
+
+.mid-section-right h2 {
+    color: hsl(35, 77%, 62%);
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.article-side p{
+    color: white;
+    font-size: 1.25rem;
+}
+
+.article-side p:nth-child(2) {
+    color: white;
+    font-size: 1rem;
+}
+
+.bottom {
+    display: inline-flex;
+    width: 100%;
+    margin-top: 5rem;
+    padding-bottom: 2rem;
+    
+    
+} 
+
+.bottom img {
+    display: flex;
+    
+}
+
+.article{
+    display: flex;
+    flex-shrink: 0;
+    width: 33%;
+}
+
+.second{
+    margin-right: 20px;
+}
+
+
+.article p:first-child{
+    font-size: 25px;
+    color: hsl(35, 77%, 62%);
+}
+
+.article p:nth-child(2) {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.article p:nth-child(p) {
+    color: grey;
+}
+
+.article-text{
+    margin-left: 1rem;
+    
+}
+
+@media screen and (max-width:650px) {
+      
+        
+    header ul {
+       display: none;
+    }
+
+    .dropdown{
+        display: block;
+        margin-left: auto;
+        margin-top: auto;
+    }
+
+
+
+    .left-mid-bottom{
+        flex-direction: column;
+        width: 100%;   
+    
+    }
+
+    .main-pc {
+        display: none;
+    }    
+
+    .main-picture-mobile{
+        display: flex;
+
+    }
+
+    .webiste-main-title{
+        display: none;
+    }
+
+    .mobile-main-title{
+        display: contents;
+        font-size: 4rem;
+    }
+
+    .left-mid-bottom-text  {
+        width: 90%;
+        font-size: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .mid-section {
+        display: block;
+    }
+    
+    .mid-section-right{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .article{
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .bottom{
+        display: block;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    main{
+        margin: 1rem;
+    }
+
+    
+
+    
+
+ 
+}
